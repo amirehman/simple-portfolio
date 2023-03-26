@@ -14,3 +14,7 @@ body,html {
 [x-cloak] {
     display: none !important;
 }
+
+.incontent a {
+    @apply border-b cursor-pointer hover:border-gray-400;
+}

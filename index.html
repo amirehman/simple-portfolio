@@ -56,14 +56,14 @@
       <!-- header -->
 
       <section class="introduction-sectioun space-y-10" id="introductionSection">
-        <div class="about text-lg space-y-3" x-html="portfolio.acf.about_me"></div>
+        <div class="about text-lg space-y-3 incontent" x-html="portfolio.acf.about_me"></div>
         <!-- about -->
 
         <div class="">
           <p class="text-gray-400 font-medium font-ts tracking-wider mb-3 select-none">quick intro</p>
           <ul class="text-lg">
             <template x-for="(item, i) in portfolio.acf.quick_intro" :key="i">
-              <li x-html="item.quick_intro_item"></li>  
+              <li x-html="item.quick_intro_item" class="incontent"></li>  
             </template>
           </ul>
         </div>
@@ -99,7 +99,7 @@
 
               <div class="project-info w-full py-5 space-y-2">
                 <h3 class="text-2xl font-bold" x-text="project.project_title"></h3>
-                <p class="text-lg leading-snug text-gray-500" x-html="project.project_short_description"></p>
+                <p class="text-lg leading-snug text-gray-500 incontent" x-html="project.project_short_description"></p>
                 <ul class="text-lg text-gray-600 project-list">
                   <template x-for="(item, i) in project.project_features" :key="i">
                     <li x-html="item.project_feature"></li>
