@@ -10,3 +10,7 @@ body,html {
     content: "—";
     @apply inline-block mr-1 text-gray-600;
 }
+
+[x-cloak] {
+    display: none !important;
+}
