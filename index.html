@@ -80,7 +80,7 @@
           <template x-for="(project, i) in portfolio.acf.projects" :key="i">
             <div x-show="project.project_title" class="project flex flex-wrap md:flex-nowrap space-y-8 md:space-y-0 md:space-x-8 mb-16">
 
-              <div class="border border-gray-100 project-thumbnail h-72 md:h-auto relative md:h-auto overflow-hidden flex w-full rounded-2xl bg-center bg-cover bg-no-repeat" x-bind:style="`background-image: url(${project.project_thumbnail});`">
+              <div class="border border-gray-100 project-thumbnail h-72 md:h-auto relative md:h-auto overflow-hidden flex w-full rounded-2xl bg-center bg-cover bg-no-repeat bg-fixed para " x-bind:style="`background-image: url(${project.project_thumbnail});`">
                 <div :class="`${project.backdrop_color}`" class="bg-opacity-50 backdrop-blur-lg absolute inset-0 flex">
 
                   <div class="max-w-2xl mx-auto w-5/6 mx-auto mt-10 shadow-lg shadow-gray-400">
